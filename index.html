@@ -132,6 +132,40 @@
                      
                   </div>
              </section>
+             <section >
+                    <!-- Selected Individual player section -->
+                   <div class="border border-dark bg-info py-3" style="height: 500px; width:300px">
+                       <h2 id="total-products" class="text-center" style="font-family: 'Dancing Script', cursive; color: rgb(255, 102, 0);font-size: 50px">Selected - V</h2><br>
+                       <ol id="list-container" class="fs-4 fw-bold">
+                           <div class="overflow-x-auto">
+                               <table class="table table-zebra w-full">
+                                 
+                                 <tbody id="players-cart">
+                                   
+                                 </tbody>
+                               </table>
+           
+                             </div>
+                       </ol>
+                   </div><br><br>
+                   <!-- Budget Calculation Part -->
+                   <div class="border border-dark text-bg-dark py-3 " style="height: 600px; width:300px">
+                       <h2 class="text-center pb-5" style="font-family: 'Dancing Script', cursive; color: rgb(255, 102, 0);font-size: 50px;">Budget</h2>
+                       <h5 class="d-flex ms-3">Per Player <input id="player-rate" class="w-50 ms-3" type="text" placeholder="rate"> </h5><br>
+                       <div class="text-center pb-5">
+                       <button id="calculate-player" type="button" class="btn btn-primary btn-lg pe-5 ps-5 ">Calculate</button>
+                       </div>
+                       <div>
+                           <h5 class="ms-3">Player Expenses $ <span id="player-expecess">0</span></h5><br>
+                           <h5 class="ms-3">Manager <input id="manager-rate" class="w-50 ms-3" type="text" placeholder="rate"></h5>
+                           <h5 class="ms-3">Coach &nbsp &nbsp &nbsp<input id="coach-rate"  class="w-50 ms-3" type="text"placeholder="rate" > </h5><br>
+                           <div class="text-center pb-5">
+                               <button id="calculate-total" type="button" class="btn btn-primary btn-lg pe-5 ps-5">Calculate Total</button>
+                           </div>
+                           <h4 class="text-center">Total &nbsp &nbsp &nbsp &nbsp  $<span id="total">0</span></h4><br>
+                       </div>
+                   </div>
+                </section>
             </main>
      
     <script src="js/player-select.js"></script>
